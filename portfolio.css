@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+
+/* ........Navbar Styling Starts from here............... */
+.navbar {
+    background-color: #24252A;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #edf0f1;
+}
+.fa-bars {
+    font-size: 40px;
+    color: #fff;
+}
+.nav-link {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease 0s;
+
+}
+.nav-link:hover  {
+    color: #0088a9 ;
+}
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+.contact-btn {
+    padding: 0.45rem 1.5rem;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+}
+.contact-btn:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+.contact-btn button {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+.white {
+    background: rgb(20, 177, 189);
+    position: sticky;
+    top: 0;
+    color: #000;
+}
+.white .navbar-brand {
+    color: #111;
+}
+.white a {
+    color: #000;
+}
+.white font {
+    color: #fff;
+}
+
+
+/* ................Hero Section Styling Starts from here................ */
+#hero{
+    background-color: #2b2b30;
+    padding: 30px 5px;
+}
+#hero .col-md-6 {
+    margin-top: 30px;
+    padding: 20px;
+}
+.image-col {
+    padding: 16px;
+    text-align: center;
+}
+.image-col img{
+    height: 20rem;
+    box-shadow: 0 3px 14px rgba(255,255,255,.7);
+    border-top: 14px solid #fff;
+    border-right: 14px solid #fff;
+    border-bottom: 14px solid #0088a9;
+    border-left: 14px solid #0088a9;
+    border-radius: .5rem;
+}
+.textbox {
+    padding: 10px 20px;
+}
+.textbox h4 { 
+    color: #edf0f1;  
+}
+.textbox h1 {
+    color: #edf0f1;
+    font-family: "Ubuntu",sans-serif;
+}
+
+.txt {
+    color: #fff;
+    padding-top: 16px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.run-txt {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.run-txt li {
+    list-style: none;
+    color:#0088a9;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.run-txt li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.run-txt li span::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:#2b2b30;
+    border-left: 3px solid #0088a9;
+    animation: type 3s steps(12) infinite;
+}
+@keyframes type {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+.textbox a button {
+    padding: 10px 40px;
+    color: black;
+    font-size: 18px;
+    background-color: none;
+    border: none;
+    border-radius: 10px;
+}
+.textbox a button:hover {
+    background-color: #0088a9;
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+}
+
+
+
+/* .................About Section Styling starts from here.............................. */
+#about {
+    background: #3c3c3f;
+    padding: 60px 40px;
+}
+.about-image {
+    border-radius: 10px;
+}
+.about-text {
+    line-height: 30px;
+    color: #fff;
+}
+.about-text h6{
+    color: #0088a9;
+    font-size: 25px;
+}
+.about-btn {
+    background: #0088a9;
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+}
+.about-btn span {
+   width: 0;
+   height: 1px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: #fff;
+   transition:  .7s ease;
+}
+.about-btn:hover span {
+    width: 100%;
+}
+
+/* ......................Skills section styling starts from here................................. */
+#skills {
+    padding: 30px 50px;
+    background: #2b2b30;
+}
+.progress {
+    border-radius: 10px;
+}
+.progress-bar {
+    background: rgb(19, 117, 124);
+    border-radius: 0 10px 10px 0px;
+}
+
+/* .................Services Section Styling Starts from here....................... */
+#service {
+    padding: 20px 30px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(images/background.jpg)
+    repeat fixed 100%;
+    background-size: cover;
+}
+.fal {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 3px;
+    transition: 1s ease-in;
+}
+.services-box:hover .fal {
+    transform: translateY(-0.937rem)
+}
+.services-box {
+    height: 25rem;
+    border: .5px solid #0088a9;
+    border-radius: 0.5rem;
+    padding: 1.562rem 1.25rem;
+    box-shadow: 0.185rem ​.1825rem 0.875rem rgba(0,0,0,.6);
+    margin-top: 1.25rem;
+}
+.services-box h2 {
+    font-family: "Poppins",sans-serif;
+    background:-webkit-linear-gradient(120deg,#ff00f7,#00d0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.services-box:nth-child(1){
+    background: linear-gradient(180deg,#448fad,#121212);
+}
+.services-box:nth-child(2){
+    background: linear-gradient(180deg,#452763,#121212);
+}
+.services-box:nth-child(3){
+    background: linear-gradient(180deg,#793d80,#121212);
+}
+
+/* ................Projects Section Styling starts from here................ */
+#projects 
+{
+    padding: 2rem 4rem;
+    background-color: #000;
+}
+.project-col {
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: .01rem solid #111;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.project-col img {
+    margin-bottom: 10px;
+    border-radius: 10%;
+    transition: .7s ease;
+}
+.project-col:hover img {
+    transform: scale(1.05);
+}
+.project-col a {
+    color: #1aaca2;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.project-col h2, p {
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+}
+.project-col h2 {
+    font-weight: 500;
+    font-size: 1.87rem;
+    padding-bottom: 0.31rem;
+}
+.project-col p{
+    font-weight: 100;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 8px;
+    
+}
+.project-col:nth-child(1){
+    background: linear-gradient(180deg,#255FBC,#121212);
+}
+.project-col:nth-child(2) {
+    background: linear-gradient(180deg, #1aaca2,#121212);
+}
+.project-col:nth-child(3){
+    background: linear-gradient(180deg,#7E478B,#121212);
+}
+.project-col:nth-child(4) {
+    background: linear-gradient(180deg,#34c3d9,#121212);
+}
+
+/* .......................Projects Section Styling Starts from here..................... */
+#contact {
+    padding: 20px 40px;
+    background-color: #121212;
+}
+.fab {
+    font-size: 30px;
+    color: #fff;
+    transition: .6s ease;
+}
+.fab:hover {
+    color: rgba(0,136,169,1);
+}
+#contact input,
+#contact textarea {
+    border: none;
+}
+
+#contact h2 {
+   color:rgba(0,136,169,1);
+}
+#contact p {
+    color: rgba(255,255,255,.8);
+}
+
+#contact span {
+    color: rgb(61, 60, 60);
+}
+
+.msg-btn {
+    background-color:rgba(0,136,169,.8);
+    color: #fff;
+    padding: 15px 25px;
+   
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.msg-btn:hover {
+    background-color:rgba(0,136,169,1);
+    color: #edf0f1;
+}
+
+/* ...............Footer Section Styling Start from Here.......................... */
+#footer {
+    padding: 10px 40px;
+    background: rgba(0,0,0,.9);
+}
+footer {
+    color: rgb(238, 234, 234);
+}
+footer a {
+    color: rgb(238, 234, 234);
+    text-decoration: none;
+}
+footer a:hover {
+    color:rgba(0,136,169,1);
+    text-decoration: none;
+}
+footer .fab {
+    margin-right: 20px;
+    font-size: 20px;
+}
+.top-footer {
+    background-color: #0088a9;
+}
+
+footer .fas {
+    margin-right: 20px;
+}
+footer hr {
+    background:#0088a9;;
+}
